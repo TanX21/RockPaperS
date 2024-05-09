@@ -1,0 +1,114 @@
+/* body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-image: url('https://source.unsplash.com/1600x900/?arcade');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.3s;
+} */
+
+.container {
+    border-radius: 50px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.574);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-top: 0;
+    color: #e74c3c;
+}
+
+.btn {
+    background-color: #50db34;
+    border: none;
+    color: #fff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background-color: #2980b9 !important; /* Added !important to ensure hover effect works */
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #ffffff;
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    50% { transform: translateX(10px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+#dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    color: #e74c3c;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#developer {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.dark-mode-bg {
+    background-color: #34495e;
+}
+
+/* Logo styles */
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Selector button styles */
+.selector-btn {
+    background-color: #3498db;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.selector-btn:hover {
+    background-color: #2980b9;
+}

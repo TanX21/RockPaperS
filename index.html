@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <style>
+       body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-image: url('https://source.unsplash.com/1600x900/?arcade');
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            transition: background-color 0.3s;
+        }
+        /* Rest of your CSS styles */
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button id="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button>
+    <div class="container">
+        <h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: #fff;border-radius: 5px;" >Rock, Paper & Scissors</h1>
+        <div id="game-selector">
+            <button class="selector-btn" onclick="selectPlayerMode('computer')">Play with Computer</button>
+            <button class="selector-btn" onclick="selectPlayerMode('player')">Play with Player</button>
+        </div>
+        <div id="game-container" style="display: none;">
+            <div id="player1" style="display: none;">
+                <h2 style="color: rgb(255, 213, 0);">Player 1</h2>
+                <button class="btn" onclick="playGame('rock', 1)">
+                    <img class="logo" src="images/rock.png" alt="Rock">
+                    Rock
+                </button>
+                <button class="btn" onclick="playGame('paper', 1)">
+                    <img class="logo" src="images/paper.png" alt="Paper">
+                    Paper
+                </button>
+                <button class="btn" onclick="playGame('scissors', 1)">
+                    <img class="logo" src="images/scissors.png" alt="Scissors">
+                    Scissors
+                </button>
+            </div>
+            <div id="player2" style="display: none;">
+                <h2 style="color: rgb(255, 0, 208);">Player 2</h2>
+                <button class="btn" onclick="playGame('rock', 2)">
+                    <img class="logo" src="images/rock.png" alt="Rock">
+                    Rock
+                </button>
+                <button class="btn" onclick="playGame('paper', 2)">
+                    <img class="logo" src="images/paper.png" alt="Paper">
+                    Paper
+                </button>
+                <button class="btn" onclick="playGame('scissors', 2)">
+                    <img class="logo" src="images/scissors.png" alt="Scissors">
+                    Scissors
+                </button>
+            </div>
+            <div id="computer-mode" style="display: none;">
+                <button class="btn" onclick="playGame('rock', 'computer')">
+                    <img class="logo" src="images/rock.png" alt="Rock">
+                    Rock
+                </button>
+                <button class="btn" onclick="playGame('paper', 'computer')">
+                    <img class="logo" src="images/paper.png" alt="Paper">
+                    Paper
+                </button>
+                <button class="btn" onclick="playGame('scissors', 'computer')">
+                    <img class="logo" src="images/scissors.png" alt="Scissors">
+                    Scissors
+                </button>
+            </div>
+        </div>
+        <div id="result"></div>
+        <div id="developer">Developed by TanX21</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
