@@ -1,4 +1,4 @@
-/* body {
+body {
     font-family: 'Comic Sans MS', cursive, sans-serif;
     background-image: url('https://source.unsplash.com/1600x900/?arcade');
     background-size: cover;
@@ -10,7 +10,7 @@
     align-items: center;
     height: 100vh;
     transition: background-color 0.3s;
-} */
+}
 
 .container {
     border-radius: 50px;
